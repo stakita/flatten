@@ -1,0 +1,314 @@
+{
+    "CompletionStatus": "Ok",
+    "CompletionTime": "2019-11-13T15:06:48.97",
+    "DataAnalyticsReport": null,
+    "DocumentAuthenticity": "Authentic",
+    "DocumentId": "4A101D2D0E1246A1A3D22689D3CC0612",
+    "DocumentScope": "IdentityDocuments",
+    "DocumentSidesCode": 1,
+    "DocumentStatusReport2": {
+        "PrimaryProcessingResult": 0,
+        "ProcessingResultRemarks": [
+            0,
+            120
+        ]
+    },
+    "FaceComparisonReport": null,
+    "IdentityDataInputStatus": null,
+    "InternalData": {
+        "Data1": "eyJXYWl0VGltZUluTWlsbGlzZWNvbmRzIjoxOTl9",
+        "Data4": "MTEyMQ=="
+    },
+    "OptionalData": null,
+    "PageAsSeparateDocumentProcessingReports": [],
+    "PersonalInfoValidationReport": {
+        "IsPersonalInfoValid": null,
+        "PersonalInfoValidationTests": null
+    },
+    "ProcessedSupplementaryImages": [],
+    "ProcessingRequest": {
+        "CreationTime": "2019-11-13T15:06:44.09",
+        "DataVerificationRequest": null,
+        "DocumentId": "4A101D2D0E1246A1A3D22689D3CC0612",
+        "DocumentProcessingParameters": {
+            "IdentityDataInput": null,
+            "ImageSource": "UncertifiedScanner",
+            "IsFromCertifiedScanner": false,
+            "IsToCheckAuthenticity": true,
+            "Tag": null
+        },
+        "FaceComparisonRequest": null,
+        "PageProcessingRequests": [
+            {
+                "DataUnitProcessingRequests": [
+                    {
+                        "DataUnitSize": 986139,
+                        "ImageIllumination": "Visible"
+                    }
+                ]
+            }
+        ],
+        "ProcessingHints": null,
+        "ProofOfAddressRequest": null,
+        "WorkerId": null
+    },
+    "ProcessingResult": {
+        "DocumentData2": {
+            "Address": null,
+            "Birthplace": null,
+            "DateOfBirth": {
+                "BadValueDescriptor": null,
+                "Value": "1958-04-17T00:00:00"
+            },
+            "DateOfExpiry": {
+                "BadValueDescriptor": null,
+                "Value": "2028-04-17T00:00:00"
+            },
+            "DateOfIssue": {
+                "BadValueDescriptor": null,
+                "Value": "2018-03-19T00:00:00"
+            },
+            "DocumentNumber": {
+                "LanguageCode": "eng",
+                "Value": "555.666.777"
+            },
+            "ExtendedData": {
+                "Authority": null,
+                "AuthorityLocal": null,
+                "Barcodes": [],
+                "BirthplaceLocal": null,
+                "BloodType": null,
+                "CalculatedAge": 61,
+                "DocumentDiscriminator": null,
+                "Employer": null,
+                "Eyes": null,
+                "FamilyName": null,
+                "FatherName": null,
+                "FirstNameLocal": null,
+                "FirstNameToLatin": null,
+                "Hair": null,
+                "Height": null,
+                "HusbandName": null,
+                "IssuePlace": null,
+                "LastNameLocal": null,
+                "LastNameToLatin": null,
+                "MiddleNameLocal": null,
+                "MiddleNameToLatin": null,
+                "MotherName": null,
+                "Observations": null,
+                "PersonalNumber": {
+                    "LanguageCode": "eng",
+                    "Value": "2.222.222-2"
+                },
+                "RegistryCode": null,
+                "VisaType": null,
+                "VoterNumber": null,
+                "Weight": null
+            },
+            "FirstName": {
+                "LanguageCode": "spa",
+                "Value": "<first_name>"
+            },
+            "FullName": null,
+            "Gender": {
+                "LanguageCode": "eng",
+                "Value": "M"
+            },
+            "LastName": {
+                "LanguageCode": "spa",
+                "Value": "<last_name>"
+            },
+            "LocalDateOfIssue": null,
+            "MiddleName": null,
+            "Mrz": null,
+            "Nationality": {
+                "LanguageCode": "eng",
+                "Value": "CHL"
+            },
+            "OptionalData": {
+                "LanguageCode": "eng",
+                "Value": "1.111.111-1"
+            },
+            "SocialSecurityNumber": null,
+            "VerifiedAddress": null
+        },
+        "DocumentPartImages": [
+            {
+                "ImageData": null,
+                "ImageQuality": null,
+                "ImageTypeCode": 7
+            },
+            {
+                "ImageData": null,
+                "ImageQuality": {
+                    "IsGenerallyAcceptable": true
+                },
+                "ImageTypeCode": 6
+            }
+        ],
+        "DocumentTypeDescriptor": {
+            "CountryIso3": "CHL",
+            "DocumentType": "ID Card",
+            "DocumentVersion": "V2",
+            "State": ""
+        },
+        "ForgeryTests": [
+            {
+                "ForgerySubtype": "Check Sum - Personal Number",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Data Comparison - Expiry Date",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Document Year Validation",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Validation - Photo",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Validation - VIZ Date of Birth",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Validation - VIZ Date of Expiry",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Validation - VIZ Date of Issue",
+                "ForgeryType": "Data Integrity",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Photo Replacement",
+                "ForgeryType": "Digital",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Text Replacement",
+                "ForgeryType": "Digital",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Letter Case - VIZ First Name",
+                "ForgeryType": "Structure",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Letter Case - VIZ Last Name",
+                "ForgeryType": "Structure",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Text Alignment",
+                "ForgeryType": "Structure",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "VIZ Fonts - Alphabetic",
+                "ForgeryType": "Structure",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "VIZ Fonts - Digits",
+                "ForgeryType": "Structure",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Photo Replacement",
+                "ForgeryType": "Visible",
+                "TestResult": "Authentic"
+            },
+            {
+                "ForgerySubtype": "Text Replacement",
+                "ForgeryType": "Visible",
+                "TestResult": "Authentic"
+            }
+        ],
+        "IsDataExtracted": true,
+        "IsDocumentExpired": false,
+        "OverallQuality": "NotAcceptable",
+        "PageProcessingResults": [
+            {
+                "BarcodesProcessingReport": null,
+                "CompletionStatus": "Ok",
+                "DurationInMilliseconds": 4688,
+                "IdentityDataInputReport": null,
+                "IsExpectedSecondSide": true,
+                "ProcessedImages": [
+                    {
+                        "CroppedHeight": 677,
+                        "CroppedWidth": 1082,
+                        "Data": null,
+                        "EquipmentMaker": "",
+                        "EquipmentModel": "",
+                        "FileName": "Front.VIS.jpg",
+                        "ImageCreationDateTime": null,
+                        "ImageFileType": "PNG",
+                        "ImageType": "Visible",
+                        "IsColored": true,
+                        "IsReduced": null,
+                        "IsValidSize": true,
+                        "Latitude": "",
+                        "Longitude": "",
+                        "OriginalHeight": 694,
+                        "OriginalWidth": 1090,
+                        "Quality": {
+                            "IsAcceptableBlurMrz": null,
+                            "IsAcceptableBlurViz": false,
+                            "IsAcceptableDark": true,
+                            "IsAcceptableDpi": true,
+                            "IsAcceptableEntropy": true,
+                            "IsAcceptableImageIncomplete": true,
+                            "IsAcceptableLayout": true,
+                            "IsAcceptableMrz": null,
+                            "IsAcceptableObliquity": true,
+                            "IsAcceptableReflectionMrz": null,
+                            "IsAcceptableReflectionViz": true,
+                            "IsAcceptableSize": true,
+                            "IsAcceptableTextConfidenceMrz": null,
+                            "IsAcceptableTextConfidenceViz": false,
+                            "IsGenerallyAcceptable": false
+                        },
+                        "QualityBeforeAdjustment": {
+                            "IsAcceptableBlurMrz": null,
+                            "IsAcceptableBlurViz": false,
+                            "IsAcceptableDark": true,
+                            "IsAcceptableDpi": true,
+                            "IsAcceptableEntropy": true,
+                            "IsAcceptableImageIncomplete": true,
+                            "IsAcceptableLayout": true,
+                            "IsAcceptableMrz": null,
+                            "IsAcceptableObliquity": true,
+                            "IsAcceptableReflectionMrz": null,
+                            "IsAcceptableReflectionViz": true,
+                            "IsAcceptableSize": true,
+                            "IsAcceptableTextConfidenceMrz": null,
+                            "IsAcceptableTextConfidenceViz": false,
+                            "IsGenerallyAcceptable": false
+                        },
+                        "ReverseGeocodingReport": null,
+                        "SoftwareUsed": ""
+                    }
+                ]
+            }
+        ],
+        "ProcessedDocumentFeatures": "ImageUnderVisibleIllumination",
+        "SdrCompletionStatus": "Ok"
+    },
+    "ProcessingStartTime": "2019-11-13T15:06:44.23",
+    "ProofOfAddressReport": null,
+    "RequestAcceptanceWarnings": [],
+    "RequestRejectionInfo": null,
+    "RiskManagementReport": null,
+    "SdrVersion": "19.10.0.16"
+}

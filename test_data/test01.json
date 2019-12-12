@@ -1,0 +1,62 @@
+{
+  "app": "lorem ipsum",
+  "appVersion": "lorem ipsum",
+  "callerEndpoint": "lorem ipsum",
+  "checkpoint": "lorem ipsum",
+  "cityID": 123456,
+  "countryISO2": "lorem ipsum",
+  "cpfFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum"
+  },
+  "device": "lorem ipsum",
+  "deviceId": "lorem ipsum",
+  "deviceLanguage": "lorem ipsum",
+  "deviceModel": "lorem ipsum",
+  "docScanFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum",
+    "retryQuotaLeft": 123456
+  },
+  "docScanMetaData": {
+    "sourceFlowId": "lorem ipsum"
+  },
+  "entityType": "lorem ipsum",
+  "entityUUID": "lorem ipsum",
+  "facebookFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum"
+  },
+  "failReason": "lorem ipsum",
+  "flowId": "lorem ipsum",
+  "flowOptionId": "lorem ipsum",
+  "flowStatus": "lorem ipsum",
+  "hasAnonymousPaymentProfile": true,
+  "location": {
+    "epoch": 123456,
+    "latitude": 123.45,
+    "longitude": 123.45
+  },
+  "ltdTripCount": 123456,
+  "marketplace": "lorem ipsum",
+  "orchestratorFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum"
+  },
+  "osVersion": "lorem ipsum",
+  "requestUUID": "lorem ipsum",
+  "responseFlowId": "lorem ipsum",
+  "responseFlowOptionId": "lorem ipsum",
+  "riderSelfieFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum",
+    "retryQuotaLeft": 123456
+  },
+  "safetyModelBlockFailureData": {
+    "message": "lorem ipsum",
+    "reason": "lorem ipsum"
+  },
+  "sourceUUID": "lorem ipsum",
+  "tenancy": "lorem ipsum",
+  "tripUUID": "lorem ipsum"
+}
