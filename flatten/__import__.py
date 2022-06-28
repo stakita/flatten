@@ -1,1 +1,1 @@
-from .flatten import main
+from .flatten import main_shim
