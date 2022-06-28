@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name = 'flatten',
+    name = 'flatten_json',
     author = 'Simon Takita',
-    url = 'https://github.com/stakita/flatten',
+    url = 'https://github.com/stakita/flatten_json',
     version = '0.1',
     packages = ['flatten'],
     entry_points = {
