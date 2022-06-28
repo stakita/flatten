@@ -164,6 +164,10 @@ def main(args):
     return 0
 
 
-if __name__ == '__main__':
+def main_shim():
     arguments = docopt(__doc__)
     sys.exit(main(arguments))
+
+
+if __name__ == '__main__':
+    main_shim()
