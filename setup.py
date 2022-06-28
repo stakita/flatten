@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name = 'flatten_json',
+    name = 'flatten',
     author = 'Simon Takita',
     url = 'https://github.com/stakita/flatten_json',
     version = '0.1',
