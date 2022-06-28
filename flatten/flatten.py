@@ -1,5 +1,13 @@
+#!/usr/bin/env python3
 '''flatten.py
+
+Usage:
+  flatten.py [--indent=INDENT] <INPUT_JSON> [<OUTPUT_JSON>]
+
+Options:
+  -i, --indent=INDENT    Indentation spaces (default:4)
 '''
+
 import sys
 import pprint
 import csv
@@ -9,12 +17,8 @@ import json
 try:
     from docopt import docopt
 except ImportError as e:
-    sys.stderr.write('Error: %s\nTry:\n    pip3 install --user docopt\n' % e)
-    sys.exit(1)
-try:
-    import sh
-except ImportError as e:
-    sys.stderr.write('Error: %s\nTry:\n    pip3 install --user sh\n' % e)
+    dependencies = ['docopt']
+    sys.stderr.write('Error: %s\nTry:\n    pip install --user %s\n' % (e, ' '.join(dependencies)))
     sys.exit(1)
 
 
@@ -52,6 +56,7 @@ class FlattenHandlers:
 
 class FlattenException(Exception):
     pass
+
 
 class Flatten:
 
@@ -138,19 +143,27 @@ class Flatten:
         return out
 
 
+def main(args):
+    input_filename = args['<INPUT_JSON>']
+    output_filename = args['<OUTPUT_JSON>']
+    indent = args['--indent']
+
+    flattener = Flatten()
+
+    input_content = open(input_filename).read()
+    input_json = json.loads(input_content)
+    flat_json = flattener.flatten_json(input_json)
+
+    flat_json_string = json.dumps(flat_json, sort_keys=False, indent=4, separators=(',', ': '))
+
+    if output_filename is not None:
+        open(output_filename, 'w+').write(flat_json_string)
+    else:
+        sys.stdout.write(flat_json_string)
+
+    return 0
+
 
 if __name__ == '__main__':
-    import json
-    import pprint
-    import test
-    j = json.loads(test.s)
-    # s = '[1,2,3,{"cat": "spot", "dog":"fifi"}]'
-    # s = '{"[0]":1, "[1]":2, "[2]": 3, "[3]": {"cat": "spot", "dog":"fifi"}, "[]":4 }'
-    # j = json.loads(s)
-    flattener = Flatten(preserve_fields, flags_lists, logging=False, expand_flagset=True)
-    f = flattener.flatten_json(j)
-    # pprint.pprint(f)
-    print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': ')))
-    print(json.dumps(f, sort_keys=True, indent=4, separators=(',', ': ')))
-    # flattener._log_print()
-
+    arguments = docopt(__doc__)
+    sys.exit(main(arguments))
