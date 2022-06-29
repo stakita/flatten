@@ -7,6 +7,6 @@ setup(
     version = '0.1',
     packages = ['flatten'],
     entry_points = {
-        'console_scripts': ['flatten = flatten:main_shim']
+        'console_scripts': ['flatten = flatten.flatten:main_shim']
     }
 )
